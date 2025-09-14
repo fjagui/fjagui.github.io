@@ -1,27 +1,149 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Lenguaje de marcas</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Lenguaje de Marcas</h1>
-				<p>Lenguaje de marcas</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="iesgrancapitan.org">IES Gran Capitán</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos de Desarrollo Web</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        /* Encabezado */
+        header {
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-weight: 300;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        /* Contenedor de módulos */
+        .modulos {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        /* Estilos de los enlaces */
+        .modulo-link {
+            display: block;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .modulo-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #ccc;
+        }
+        
+        .modulo-link h2 {
+            font-weight: 400;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .modulo-link p {
+            font-size: 1rem;
+            color: #777;
+        }
+        
+        /* Pie de página */
+        footer {
+            margin-top: 60px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (min-width: 768px) {
+            .modulos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .modulo-link {
+                width: calc(50% - 15px);
+            }
+            
+            .modulo-link:last-child {
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .modulo-link {
+                width: calc(33.333% - 20px);
+            }
+            
+            .modulo-link:last-child {
+                width: calc(33.333% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Desarrollo de Aplicaciones Web</h1>
+        </header>
+        
+        <div class="modulos">
+            <a href="https://fjagui.github.io/web-daw/" class="modulo-link">
+                <h2>DAW</h2>
+                <p>Despliegue de aplicaciones web</p>
+            </a>
+            
+            <a href="https://fjagui.github.io/web-bd" class="modulo-link">
+                <h2>BD</h2>
+                <p>Bases de datos</p>
+            </a>
+            
+            <a href="https://fjagui.github.io/web-dawes" class="modulo-link">
+                <h2>DAWES</h2>
+                <p>Desarrollo de aplicaciones web en entorno servidor</p>
+            </a>
+        </div>
+        
+        <footer>
+            <p>Ciclo de Desarrollo de Aplicaciones Web</p>
+        </footer>
+    </div>
+</body>
 </html>
